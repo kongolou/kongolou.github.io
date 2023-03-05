@@ -1,245 +1,364 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Notes About Hexo | Kongolou&#39;s Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="本文介绍 Hexo 的基本操作。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Notes About Hexo">
-<meta property="og:url" content="http://kongolou.github.io/2023/03/05/notes-about-hexo/index.html">
-<meta property="og:site_name" content="Kongolou&#39;s Blog">
-<meta property="og:description" content="本文介绍 Hexo 的基本操作。">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://w.wallhaven.cc/full/zy/wallhaven-zyxvqy.jpg">
-<meta property="article:published_time" content="2023-03-05T07:30:52.000Z">
-<meta property="article:modified_time" content="2023-03-05T08:09:20.397Z">
-<meta property="article:author" content="kongolou">
-<meta property="article:tag" content="notes">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://w.wallhaven.cc/full/zy/wallhaven-zyxvqy.jpg">
-  
-    <link rel="alternate" href="/atom.xml" title="Kongolou's Blog" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
 
+
+<!DOCTYPE html>
+<html lang="en" color-mode=light>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Notes About Hexo - Kongolou&#39;s Blog</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="google" content="notranslate" />
   
+  <meta name="description" content="本文介绍 Hexo 的基本操作。
+
+
+文章摘要与截断1...">
+  <meta name="author" content="kongolou">
+  <link rel="icon" href="/images/icons/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="/images/icons/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png" sizes="180x180">
+  <meta rel="mask-icon" href="/images/icons/stun-logo.svg" color="#333333">
+  
+    <meta rel="msapplication-TileImage" content="/images/icons/favicon-144x144.png">
+    <meta rel="msapplication-TileColor" content="#000000">
+  
+
   
 <link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
   
+    
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_1445822_p6ry5n7lrr.css">
+
+  
+
+  
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+  
+
+  
+    
+      
+        
+        
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/xcode.min.css" name="highlight-style" mode="light">
+
+      
+        
+        
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.18.1/styles/solarized-dark.min.css" name="highlight-style" mode="dark">
+
+      
+  
+
+  <script>
+    var CONFIG = window.CONFIG || {};
+    var ZHAOO = window.ZHAOO || {};
+    CONFIG = {
+      isHome: false,
+      fancybox: true,
+      pjax: false,
+      loading: {
+        gif: '/images/theme/loading.gif',
+        lottie: ''
+      },
+      lazyload: {
+        enable: true,
+        only_post: 'false',
+        loading: {
+          gif: '/images/theme/loading.gif',
+          lottie: ''
+        }
+      },
+      donate: {
+        enable: false,
+        alipay: 'https://pic.izhaoo.com/alipay.jpg',
+        wechat: 'https://pic.izhaoo.com/wechat.jpg'
+      },
+      galleries: {
+        enable: true
+      },
+      fab: {
+        enable: true,
+        always_show: false
+      },
+      carrier: {
+        enable: true
+      },
+      daovoice: {
+        enable: false
+      },
+      preview: {
+        background: {
+          default: '',
+          api: ''
+        },
+        motto: {
+          default: '我在开了灯的床头下，想问问自己的心啊。',
+          typing: true,
+          api: 'https://v2.jinrishici.com/one.json',
+          data_contents: '["data","content"]'
+        },
+      },
+      qrcode: {
+        enable: false,
+        type: 'url',
+        image: 'https://pic.izhaoo.com/weapp-code.jpg',
+      },
+      toc: {
+        enable: true
+      },
+      scrollbar: {
+        type: 'default'
+      },
+      notification: {
+        enable: false,
+        delay: 4500,
+        list: '',
+        page_white_list: '',
+        page_black_list: ''
+      },
+      search: {
+        enable: false,
+        path: ''
+      }
+    }
+  </script>
+
+  
+
+  
+
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Kongolou&#39;s Blog</a>
-      </h1>
+<body class="lock-screen">
+  <div class="loading" id="loading"></div>
+  
+    
+
+
+  <nav class="navbar">
+    <div class="left">
+      
+        <i class="iconfont iconhome j-navbar-back-home"></i>
+      
+      
+      
+        <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
+      
       
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://kongolou.github.io"></form>
-      </div>
+    <div class="center">Notes About Hexo</div>
+    <div class="right">
+      <i class="iconfont iconmenu j-navbar-menu"></i>
+    </div>
+    
+  </nav>
+
+  
+  
+
+<nav class="menu">
+  <div class="menu-container">
+    <div class="menu-close">
+      <i class="iconfont iconbaseline-close-px"></i>
+    </div>
+    <ul class="menu-content"><li class="menu-item">
+        <a href="/ " class="underline "> 首页</a>
+      </li><li class="menu-item">
+        <a href="/galleries/ " class="underline "> 摄影</a>
+      </li><li class="menu-item">
+        <a href="/archives/ " class="underline "> 归档</a>
+      </li><li class="menu-item">
+        <a href="/tags/ " class="underline "> 标签</a>
+      </li><li class="menu-item">
+        <a href="/categories/ " class="underline "> 分类</a>
+      </li><li class="menu-item">
+        <a href="/about/ " class="underline "> 关于</a>
+      </li></ul>
+    
+      <div class="menu-copyright"><p>© 2023 kongolou  |  Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/izhaoo/hexo-theme-zhaoo">zhaoo</a></p></div>
+    
+  </div>
+</nav>
+  <main id="main">
+  <div class="article-wrap">
+    <div class="row container">
+      <div class="col-xl-3"></div>
+      <div class="col-xl-6"><article class="article">
+  <div class="wrap">
+    <section class="head">
+  <img   class="lazyload" data-original="https://w.wallhaven.cc/full/we/wallhaven-we5jlx.png" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="  draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title">Notes About Hexo</h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>March 05, 2023</span>
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>381</span>
     </div>
   </div>
-</header>
-
-      <div class="outer">
-        <section id="main"><article id="post-notes-about-hexo" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/03/05/notes-about-hexo/" class="article-date">
-  <time class="dt-published" datetime="2023-03-05T07:30:52.000Z" itemprop="datePublished">2023-03-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+</section>
+    <section class="main">
+      <section class="content">
         
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      Notes About Hexo
-    </h1>
-  
+          <p><p>本文介绍 Hexo 的基本操作。</p></p>
+        
+        <h1 id="文章摘要与截断"><a href="#文章摘要与截断" class="headerlink" title="文章摘要与截断"></a>文章摘要与截断</h1><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs md">摘要（同时也是正文的一部分）<br>&lt;!--more--&gt;<br>正文剩下的部分<br></code></pre></td></tr></table></figure>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>本文介绍 Hexo 的基本操作。</p>
-<span id="more"></span>
-
-<h1 id="文章摘要与截断"><a href="#文章摘要与截断" class="headerlink" title="文章摘要与截断"></a>文章摘要与截断</h1><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">摘要（同时也是正文的一部分）</span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line">正文剩下的部分</span><br></pre></td></tr></table></figure>
-
-<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">图片</span>](<span class="link">https://w.wallhaven.cc/full/zy/wallhaven-zyxvqy.jpg</span>)</span><br></pre></td></tr></table></figure>
+<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">[<span class="hljs-string">图片</span>](<span class="hljs-link">https://w.wallhaven.cc/full/zy/wallhaven-zyxvqy.jpg</span>)<br></code></pre></td></tr></table></figure>
 
 <p>例如，<a target="_blank" rel="noopener" href="https://w.wallhaven.cc/full/zy/wallhaven-zyxvqy.jpg">图片</a>。</p>
 <p>链接的形式也可以使用<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/tag-plugins#Link">标签插件</a>。</p>
 <h2 id="媒体资源链接"><a href="#媒体资源链接" class="headerlink" title="媒体资源链接"></a>媒体资源链接</h2><p>如果要展示媒体资源，需要以 ! 开头：</p>
-<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">日落</span>](<span class="link">https://w.wallhaven.cc/full/zy/wallhaven-zyxvqy.jpg</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs markdown">![<span class="hljs-string">日落</span>](<span class="hljs-link">https://w.wallhaven.cc/full/zy/wallhaven-zyxvqy.jpg</span>)<br></code></pre></td></tr></table></figure>
 
 <p>效果如下图。</p>
-<p><img src="https://w.wallhaven.cc/full/zy/wallhaven-zyxvqy.jpg" alt="日落"></p>
+<p><img    class="lazyload" data-original="https://w.wallhaven.cc/full/zy/wallhaven-zyxvqy.jpg" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg=="   ><span class="image-caption">日落</span></p>
 <h1 id="配置文件选项"><a href="#配置文件选项" class="headerlink" title="配置文件选项"></a>配置文件选项</h1><p>如果要在新建文件时，同时创建资源文件夹，需要将 _config.yml 中的 post_asset_folder 属性设置为 true .</p>
-<figure class="highlight md"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post<span class="emphasis">_asset_</span>folder: true</span><br></pre></td></tr></table></figure>
+<figure class="highlight yaml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
 
 <h1 id="End"><a href="#End" class="headerlink" title="End"></a>End</h1><p>更多内容，请参考<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">官方文档</a>。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://kongolou.github.io/2023/03/05/notes-about-hexo/" data-id="clev2ytm00000b8vcbffl3dlw" data-title="Notes About Hexo" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/notes/" rel="tag">notes</a></li></ul>
-
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2023/03/04/welcome/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Welcome</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
+      </section>
+      <section class="extra">
         
-          <aside id="sidebar">
+          <ul class="copyright">
   
-    
-
+    <li><strong>本文作者：</strong>kongolou</li>
+    <li><strong>本文链接：</strong><a href="http://kongolou.github.io/2023/03/05/notes-about-hexo/index.html" title="http:&#x2F;&#x2F;kongolou.github.io&#x2F;2023&#x2F;03&#x2F;05&#x2F;notes-about-hexo&#x2F;index.html">http:&#x2F;&#x2F;kongolou.github.io&#x2F;2023&#x2F;03&#x2F;05&#x2F;notes-about-hexo&#x2F;index.html</a></li>
+    <li><strong>版权声明：</strong>本博客所有文章均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" title="BY-NC-SA" target="_blank" rel="noopener">BY-NC-SA</a> 许可协议，转载请注明出处！</li>
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/notes/" rel="tag">notes</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/notes/" style="font-size: 10px;">notes</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
+</ul>
         
-          <li>
-            <a href="/2023/03/05/notes-about-hexo/">Notes About Hexo</a>
-          </li>
         
-          <li>
-            <a href="/2023/03/04/welcome/">Welcome</a>
-          </li>
         
-      </ul>
-    </div>
-  </div>
+  <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/notes/" rel="tag">notes</a></li></ul> 
 
-  
-</aside>
+        
+  <nav class="nav">
+    <a></a>
+    <a href="/2023/03/04/welcome/">Welcome<i class="iconfont iconright"></i></a>
+  </nav>
+
+      </section>
+      
+    </section>
+  </div>
+</article></div>
+      <div class="col-xl-3">
+        
+          
+  <aside class="toc-wrap">
+    <h3 class="toc-title">文章目录：</h3>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E6%91%98%E8%A6%81%E4%B8%8E%E6%88%AA%E6%96%AD"><span class="toc-text">文章摘要与截断</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5"><span class="toc-text">链接</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AA%92%E4%BD%93%E8%B5%84%E6%BA%90%E9%93%BE%E6%8E%A5"><span class="toc-text">媒体资源链接</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%80%89%E9%A1%B9"><span class="toc-text">配置文件选项</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#End"><span class="toc-text">End</span></a></li></ol>
+  </aside>
+
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 kongolou<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
+</main>
+  
+
+<footer class="footer">
+  <div class="footer-social"><a 
+        href="https://github.com/kongolou "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color= '#9f7be1'" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  icongithub-fill "></i>
+      </a><a 
+        href="mailto:kongolou@163.com "
+        target="_blank"
+        class="footer-social-item"
+        onMouseOver="this.style.color=#FF3B00" 
+        onMouseOut="this.style.color='#33333D'">
+          <i class="iconfont  iconmail"></i>
+      </a></div>
+  
+    <div class="footer-copyright"><p>© 2023 kongolou  |  Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme - <a target="_blank" href="https://github.com/izhaoo/hexo-theme-zhaoo">zhaoo</a></p></div>
+  
 </footer>
-
-    </div>
-    <nav id="mobile-nav">
   
-    <a href="/" class="mobile-nav-link">Home</a>
+      <div class="fab fab-plus">
+    <i class="iconfont iconplus"></i>
+  </div>
   
-    <a href="/archives" class="mobile-nav-link">Archives</a>
   
-</nav>
+  
+  <div class="fab fab-up">
+    <i class="iconfont iconcaret-up"></i>
+  </div>
+  
+  
+  
     
+<script src="/js/color-mode.js"></script>
+
+  
+  
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
-<script src="/js/jquery-3.4.1.min.js"></script>
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
 
 
 
 
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+
+
+<script src="/js/utils.js"></script>
 <script src="/js/script.js"></script>
 
 
 
 
 
-  </div>
-</body>
+
+
+  <script>
+    (function () {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>

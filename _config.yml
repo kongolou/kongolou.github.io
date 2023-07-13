@@ -3,18 +3,21 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: "Kongolou's Blog"
 subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
+description: "你好！这里是 kongolou 的个人博客 ~"
+keywords: kongolou
+author: kongolou
+language:
+  - zh-CN
+  - zh-TW
+  - en
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: http://kongolou.github.io
+permalink: /post/:title.html  # :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -96,6 +99,10 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+aplayer:
+  meting: true
+  asset_inject: false
+
 ## Themes: https://hexo.io/themes/
 theme: butterfly
 

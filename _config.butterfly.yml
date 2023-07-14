@@ -23,11 +23,11 @@ menu:
     归档: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
+  友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
   # List || fas fa-list || hide:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
-  # 友情链接: /link/ || fas fa-link
 
 # Code Blocks (代碼相關)
 # --------------------------------------

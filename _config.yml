@@ -6,7 +6,9 @@
 title: "KGL.BLOG"
 subtitle: "Kongolou's Blog"
 description: "Hello! This is kongolou ~"
-keywords: kongolou
+keywords:
+  - kongolou
+  - kgl.blog
 author: kongolou
 language:
   - zh-CN

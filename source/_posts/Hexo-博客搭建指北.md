@@ -4,7 +4,7 @@ date: 2023-07-14 09:43:11
 updated:
 tags:
   - Hexo
-  - blog
+  - Blog
 categories:
   - 沉淀
   - 指北
@@ -75,7 +75,7 @@ deploy:
 先检查本地有没有公钥，如果没有就新建一个：  
 ```bash
 $ ls -al ~/.ssh
-$ ssh-keygen -t ed25519 -C "your_email@example.com"
+$ ssh-keygen -t ed25519 -C "useremail@example.com"  # 注意替换
 ```
 接下来是著名的“三次回车”：  
 ```plaintext
@@ -211,9 +211,16 @@ $ git push -u origin main
 
 与 α 线相比，在 β 线里我们开局有一个远程仓库，那是我们在 α 线建立的记忆资料，现在我们要从中取回记忆。
 
-当我们身处于一个新建的 `blog/` 目录下，  
+当我们身处在一个全新的 `blog/` 目录下，  
 ```bash
 $ sudo pacman -S git nodejs npm
+$ ls -al ~/.ssh
+$ cat ~/.ssh/id_ed25519.pub
+$ ssh-keygen -t ed25519 -C "useremail@example.com"                  # 注意替换
+$ ssh -T git@github.com
+$ git config --global init.defaultBranch main
+$ git config --global user.email "useremail@example.com"            # 注意替换
+$ git config --global user.name "username"                          # 注意替换
 $ git init
 $ git remote add origin git@github.com:username/username.github.io  # 注意替换
 $ git pull origin main:main
@@ -228,9 +235,9 @@ $ rm -rf node_modules && npm install --force
 
 # 参考链接
 
-[ArchWiki | Node.js](https://wiki.archlinuxcn.org/wiki/Node.js)  
-[Hexo 文档 | 在 GitHub Pages 上部署 Hexo](https://hexo.io/zh-cn/docs/github-pages)  
-[Github 文档 | 关于 SSH](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/about-ssh)  
-[菜鸟教程 | Git 教程](https://www.runoob.com/git/git-tutorial.html)  
-[fatal: Not a git repository (or any of the parent directories): .git](https://blog.csdn.net/wenb1bai/article/details/89363588)  
-[error: src refspec master does not match any.](https://blog.csdn.net/qq_38198952/article/details/82792279)
+- [ArchWiki | Node.js](https://wiki.archlinuxcn.org/wiki/Node.js)
+- [Hexo 文档 | 在 GitHub Pages 上部署 Hexo](https://hexo.io/zh-cn/docs/github-pages)
+- [Github 文档 | 关于 SSH](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/about-ssh)
+- [菜鸟教程 | Git 教程](https://www.runoob.com/git/git-tutorial.html)
+- [fatal: Not a git repository (or any of the parent directories): .git](https://blog.csdn.net/wenb1bai/article/details/89363588)
+- [error: src refspec master does not match any.](https://blog.csdn.net/qq_38198952/article/details/82792279)

@@ -40,13 +40,13 @@ abcjs:
 
 ## 远程侧
 
-新建 GitHub 仓库，命名为 ~~username~~.github.io，选择不附带 README.md 文件。
+新建 GitHub 公开仓库，命名为 username.github.io，选择不附带 README.md 文件。
 
 ## 本地侧
 
 > 不迷路的前提是我们时刻清楚自己身处何方。
 
-我们现在身处你新建的博客目录下，比如是 `blog/`
+我们现在身处你新建的博客目录下，比如 `blog/`
 
 ### 部署 Hexo
 
@@ -63,14 +63,14 @@ $ vim _config.yml                       # 接下来编辑 Hexo 配置文件
 在 Hexo 配置文件 `_config.yml` 的结尾处找到以下内容并修改：  
 ```yaml
 deploy:
-	type: git
-	branch: gh-pages
-	repo:  # 必填，填博客所在远程仓库的地址
+  type: git
+  branch: gh-pages
+  repo:  # 必填，填博客所在远程仓库的地址
 ```
 
 ### 部署 SSH 连接到 GitHub
 
-#### 创建公钥 [???](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+#### 创建公钥 [？](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 先检查本地有没有公钥，如果没有就新建一个：  
 ```bash
@@ -84,7 +84,7 @@ Enter passphrase (empty for no passphrase): [Type a passphrase or press enter]
 Enter same passphrase again: [Type the passphrase or press enter]
 ```
 
-#### 创建私钥 [???](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+#### 创建私钥 [？](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 ```bash
 $ cat ~/.ssh/id_ed25519.pub
@@ -103,15 +103,15 @@ Are you sure you want to continue connecting (yes/no)? yes
 
 # 项目管理-α
 
-提示：前方发现 git 出没，请拿好[那张图](https://www.runoob.com/git/git-basic-operations.html)。
+提示：前方出现 git，请带好[那张图](https://www.runoob.com/git/git-basic-operations.html)。
 
 ## 本地侧
 
+> 知己知彼，百战不殆。
+
 ### 部署 Git
 
-> 知己知彼，百战不殆。  
-
-首先要明确我们的战略，我们的博客将来要部署在基佬仓库，我们不仅希望其能对外展示，还希望其能托管我们源文件夹下的代码以防日后设备遭遇不测。  
+首先要明确我们的战略，我们的博客将来要部署在基佬仓库，我们不仅希望其能对外展示，还希望其托管我们源文件夹下的代码，以防日后遭遇不测。  
 
 因此我们需要使用双分支，其中，main 分支用于托管代码，而 gh-pages 分支用于展示博客。  
 
@@ -119,7 +119,7 @@ Are you sure you want to continue connecting (yes/no)? yes
 
 #### Git 配置
 
-出于某种精神洁癖，以下使用 main 作为远程仓库和本地仓库默认分支名称。  
+出于某种精神洁癖，以下使用 main 作为远程仓库和本地仓库的默认分支名称。  
 ```bash
 $ git config --global init.defaultBranch main              # 设置本地仓库默认分支为 main
 $ git config --global user.email "useremail@example.com"   # 请替换其中的 useremail...
@@ -147,7 +147,7 @@ $ git push -u origin main           # 推送到远程仓库 main -> origin/main
 ```bash
 $ node -v
 ```
-记下 nodejs 的版本号，将来更换版本需要重新记录。  
+记下 nodejs 的版本号，将来更换 nodejs 版本需要重新记录。  
 新建 `blog/.github/workflows/pages.yml` 文件，填入以下内容，将其中的 20 改为你刚才记下的版本号。  
 ```yaml
 name: Pages
@@ -196,20 +196,22 @@ $ git push -u origin main
 现在远程仓库里已经出现了我们期望的两个分支，接下来还剩最后一步——切换展示分支。
 
 ## 远程侧
-选择 Repo Settings > Pages > Source，将 main 改为 gh-pages 并 Save，此时博客可通过域名展示。
+
+在远程仓库中选择 Settings > Pages > Source，将 main 改为 gh-pages 并 Save，此时博客可通过域名展示。
 
 恭喜！你现在拥有了一个可以公网访问的个人博客网站！而且你没花一分钱！
 
 怎么样，是不是抑制不住内心的激动呢？维护一个博客还有一段漫长的路要走，希望你不忘初心，继续前进！
 
-# 边界曲面的缺失之环-β
+# 缺失之环-β
+
 比较本地 main 仓库与远程 main 仓库发现，远程 main 仓库缺少 node_modules 文件夹。
 
 这是一种解耦合设计，但是也导致我们在 β 线工作时遇到一些问题。接下来我们解决这些问题。
 
-与 α 线相比，在 β 线里我们开局有一个远程仓库，那是我们在 α 线建立的记忆资料，我们现在要从这个远程仓库中取回记忆。
+与 α 线相比，在 β 线里我们开局有一个远程仓库，那是我们在 α 线建立的记忆资料，现在我们要从中取回记忆。
 
-同样的，我们现在身处一个新建的 `blog/` 目录下。  
+当我们身处于一个新建的 `blog/` 目录下，  
 ```bash
 $ sudo pacman -S git nodejs npm
 $ git init

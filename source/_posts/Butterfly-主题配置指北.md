@@ -250,6 +250,26 @@ social:
   fas fa-envelope: mailto:kongolou@163.com || Email
 ```
 
+# 侧栏设置
+
+这里选择关掉按钮、公告以及其他不必要的内容。  
+```yaml
+aside:
+  enable: true
+  card_author:
+    enable: true
+    button:
+      enable: false
+  card_announcement:
+    enable: false
+  card_categories:
+    enable: false
+  card_tags:
+    enable: false
+  card_archives:
+    enable: false
+```
+
 # 页脚设置
 
 ```yaml
@@ -296,6 +316,20 @@ fireworks:
 ```yaml
 index_post_content:
   method: false
+```
+
+# 文章设置
+
+## 相关文章
+
+这里选择关掉显示相关文章。  
+```yaml
+related_post:
+  enable: false
+  limit: 6
+  date_type: created
+
+post_pagination: false
 ```
 
 # 插件设置
@@ -351,8 +385,8 @@ $ npm install katex @renbaoshuo/markdown-it-katex
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 markdown:
-	plugins:
-		- '@renbaoshuo/markdown-it-katex'
+  plugins:
+    - '@renbaoshuo/markdown-it-katex'
 ```
 注：按照这种方法生成的公式似乎存在 bug，目前不建议使用数学公式。
 

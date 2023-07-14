@@ -45,7 +45,7 @@ code_word_wrap: false
 social:
   # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
-  fab fa-zhihu: https://www.zhihu.com/people/bei-yi-zuo-gu || Zhihu
+  fab fa-z: https://www.zhihu.com/people/bei-yi-zuo-gu || Zhihu
   fab fa-bilibili: https://space.bilibili.com/453346061 || Bilibili
   fab fa-github: https://github.com/kongolou || Github
   fas fa-envelope: mailto:kongolou@163.com || Email
@@ -197,7 +197,7 @@ post_edit:
 
 # Related Articles
 related_post:
-  enable: true
+  enable: false
   limit: 6 # Number of posts displayed
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
@@ -206,7 +206,7 @@ related_post:
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
-post_pagination: 1
+post_pagination: false
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
@@ -243,32 +243,32 @@ aside:
     enable: true
     description:
     button:
-      enable: true
+      enable: false
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/kongolou
   card_announcement:
-    enable: true
-    content: "开发一个网站并不难，难的是去维护它。"
+    enable: false
+    content: "难的不是搭建一个网站，而是去维护它。"
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
     sort: date # date or updated
     sort_order: # Don't modify the setting unless you know how it works
   card_categories:
-    enable: true
+    enable: false
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
   card_tags:
-    enable: true
+    enable: false
     limit: 40 # if set 0 will show all
     color: false
     orderby: random # Order of tags, random/name/length
     order: 1 # Sort of order. 1, asc for ascending; -1, desc for descending
     sort_order: # Don't modify the setting unless you know how it works
   card_archives:
-    enable: true
+    enable: false
     type: monthly # yearly or monthly
     format: MMMM YYYY # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending

@@ -320,6 +320,16 @@ index_post_content:
 
 # 文章设置
 
+## 页面美化
+
+```yaml
+beautify:
+  enable: true
+  field: post
+  title-prefix-icon: '\f0c1'
+  title-prefix-icon-color: '#F47466'
+```
+
 ## 相关文章
 
 这里选择关掉显示相关文章。  

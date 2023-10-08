@@ -56,30 +56,35 @@ SQL 的三级模式示意图：
 
 # 数据类型
 
-| 字符类型 ||
-| --- | --- |
-| char(n) | 定长字符串 |
-| varchar(n) | 变长字符串 |
-| clob | 字符串大对象 |
-| blob | 二进制大对象 |
+SQL 中的数据类型可以分为数值、文本和其他约定类型。
+- 数值类型包括整数 INT 、浮点数 DOUBLE 等。
+- 文本类型包括字符串 VARCHAR(n) 、字符对象 CLOB 等。
+- 其他约定类型包括布尔值 BOOLEAN 、二进制对象 BLOB 等。
 
-| 数字类型 ||
-| --- | --- |
-| int | 整型， 4 bytes |
-| smallint | 短整型， 2 bytes |
-| bigint | 大整型， 8 bytes |
-| dec(p,d) | p 位浮点数，带 d 位小数 |
-| real | 单精度浮点数 |
-| doubleprecision | 双精度浮点数 |
-| float(n) | n 位浮点数 |
+在不同的 SQL 中，可能的数据类型包括：
 
-| 约定类型 ||
+| 数据类型 | 描述 |
 | --- | --- |
-| boolean | 逻辑布尔型 |
-| date | 日期型，格式 YYYY-MM-DD |
-| time | 时间型，格式 HH:MM:SS |
-| timestamp | 时间戳型 |
-| interval | 时间间隔型 |
+| tinyint | 微整型， 1 字节 |
+| smallint | 短整型， 2 字节 |
+| int, integer | 整型， 4 字节 |
+| bigint | 大整型， 8 字节 |
+| real, float(n) | 单精度浮点数， 4 字节 |
+| double, doubleprecision | 双精度浮点数， 8 字节 |
+| numeric(p, d), decimal(p, d) | p 位数字， d 位小数 |
+| char, character(n) | 字符类型 |
+| varchar(n) | 字符串类型 |
+| text, clob | 字符对象类型 |
+| binary | 二进制值型 |
+| varbinary(n) | 二进制串型 |
+| blob | 二进制对象型 |
+| boolean | 布尔类型， true 或 false |
+| date | 日期型， YYYY-MM-DD |
+| time | 时间型， HH:MM:SS |
+| datetime | 日期时间型 |
+| timestamp | 日期时间戳型 |
+| interval | 间隔时间型 |
+| null | 空值型 |
 
 # 数据查询
 
@@ -116,7 +121,7 @@ from <table_name> | <view_name>
 ### 三值逻辑表
 
 | x | y | x and y | x or y |
-|---|---|---------|--------|
+|---|---|:-------:|:------:|
 | T | T | T       | T      |
 | T | U | U       | T      |
 | T | F | F       | T      |

@@ -15,11 +15,68 @@ highlight_shrink:
 random:
 ---
 {% flink %}
-- class_name: 友情链接
+- class_name: 官网
   class_desc:
   link_list:
-    - name: 追番表
+    - name: Git
+      link: https://git-scm.com/
+      avatar: https://git-scm.com/favicon.ico
+      descr: 分布式版本控制系统
+    - name: Node.js
+      link: https://nodejs.org/
+      avatar: https://nodejs.org/static/images/favicons/favicon.png
+      descr: JavaScript 运行环境
+    - name: Hexo
+      link: https://hexo.io/
+      avatar: https://hexo.io/icon/favicon-32x32.png
+      descr: 静态站点生成器
+- class_name: 群星
+  class_desc:
+  link_list:
+    - name: Jerry的博客
+      link: https://butterfly.js.org/
+      avatar: https://butterfly.js.org/img/avatar.png
+      descr: Butterfly 主题官方网站
+    - name: DrBlackの锦里
+      link: https://www.drblack-system.com/
+      avatar: https://www.drblack-system.com/wp-content/uploads/2019/07/cropped-drmiku-192x192.png
+      descr: 系统主题制作博主
+- class_name: 我的
+  class_desc:
+  link_list:
+    - name: GitHub-kongolou
+      link: https://github.com/kongolou
+      avatar: https://github.com/fluidicon.png
+      descr: 我的 GitHub 主页
+    - name: Gitlab-kongolou
+      link: https://gitlab.com/kongolou
+      avatar: https://gitlab.com/assets/twitter_card-570ddb06edf56a2312253c5872489847a0f385112ddbcd71ccfa1570febab5d2.jpg
+      descr: 我的 Gitlab 主页
+    - name: Bangumi-Qimiao
       link: https://bgm.tv/anime/list/689280
       avatar: /image/bangumi.png
-      descr: 我的 Bangumi
+      descr: 我的追番表
+    - name: 哔哩哔哩-七秒Qimiao
+      link: https://space.bilibili.com/453346061
+      avatar: /image/bilibili.png
+      descr: 我的哔哩哔哩主页
+    - name: 知乎-杯已作古
+      link: https://www.zhihu.com/people/bei-yi-zuo-gu
+      avatar: /image/zhihu.png
+      descr: 我的知乎主页
+    - name: 语雀-orGPie
+      link: https://www.yuque.com/kongolou
+      avatar: /image/yuque.png
+      descr: 我的语雀主页
+- class_name: 收藏
+  class_desc:
+  link_list:
+    - name: ArchWiki
+      link: https://wiki.archlinux.org/
+      avatar: /image/archwiki.png
+      descr: 在线 Arch Linux 文档库
+    - name: 萌图社
+      link: https://moetu.club/
+      avatar: https://moetu.club/wp-content/uploads/2019/06/cropped-icon-1-192x192.png
+      descr: 二次元图片分享社区
 {% endflink %}

@@ -1,5 +1,5 @@
 ---
-title: Vim-配置
+title: Vim 配置
 date: 2023-10-06 10:56:38
 updated:
 tags:
@@ -32,7 +32,7 @@ abcjs:
 
 在 _vimrc 文件中追加如下内容。
 
-```vim
+```vimscript
 " ... 在结尾追加
 " 设置缩进
 set shiftwidth=4

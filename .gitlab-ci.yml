@@ -1,4 +1,4 @@
-image: node:20.4.0 # use nodejs v10 LTS
+image: node:18.18.0 # use nodejs v18 LTS
 cache:
   paths:
     - node_modules/

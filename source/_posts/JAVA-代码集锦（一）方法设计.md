@@ -1,5 +1,5 @@
 ---
-title: JAVA 代码集锦（一）
+title: JAVA 代码集锦（一）方法设计
 date: 2023-11-17 10:21:36
 updated:
 tags:

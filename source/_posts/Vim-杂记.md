@@ -1,5 +1,5 @@
 ---
-title: Vim 配置
+title: Vim 杂记
 date: 2023-10-06 10:56:38
 updated:
 tags:

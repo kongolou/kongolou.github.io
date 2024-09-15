@@ -54,26 +54,26 @@ random:
       descr: 我的 Gitlab 主页
     - name: Bangumi-Qimiao
       link: https://bgm.tv/anime/list/689280
-      avatar: /image/bangumi.png
+      avatar: /images/bangumi.png
       descr: 我的追番表
     - name: 哔哩哔哩-七秒Qimiao
       link: https://space.bilibili.com/453346061
-      avatar: /image/bilibili.png
+      avatar: /images/bilibili.png
       descr: 我的哔哩哔哩主页
     - name: 知乎-杯已作古
       link: https://www.zhihu.com/people/bei-yi-zuo-gu
-      avatar: /image/zhihu.png
+      avatar: /images/zhihu.png
       descr: 我的知乎主页
     - name: 语雀-orGPie
       link: https://www.yuque.com/kongolou
-      avatar: /image/yuque.png
+      avatar: /images/yuque.png
       descr: 我的语雀主页
 - class_name: 收藏
   class_desc:
   link_list:
     - name: ArchWiki
       link: https://wiki.archlinux.org/
-      avatar: /image/archwiki.png
+      avatar: /images/archwiki.png
       descr: 在线 Arch Linux 文档库
     - name: 萌图社
       link: https://moetu.club/

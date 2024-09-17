@@ -20,15 +20,15 @@ random:
   link_list:
     - name: Git
       link: https://git-scm.com/
-      avatar: https://git-scm.com/favicon.ico
+      avatar: /images/git.png
       descr: 分布式版本控制系统
     - name: Node.js
       link: https://nodejs.org/
-      avatar: https://nodejs.org/static/images/favicons/favicon.png
+      avatar: /images/nodejs.png
       descr: JavaScript 运行环境
     - name: Hexo
       link: https://hexo.io/
-      avatar: https://hexo.io/icon/favicon-32x32.png
+      avatar: /images/hexo.png
       descr: 静态站点生成器
 - class_name: 群星
   class_desc:
@@ -50,7 +50,7 @@ random:
       descr: 我的 GitHub 主页
     - name: Gitlab-kongolou
       link: https://gitlab.com/kongolou
-      avatar: https://gitlab.com/assets/twitter_card-570ddb06edf56a2312253c5872489847a0f385112ddbcd71ccfa1570febab5d2.jpg
+      avatar: /images/gitlab.png
       descr: 我的 Gitlab 主页
     - name: Bangumi-Qimiao
       link: https://bgm.tv/anime/list/689280

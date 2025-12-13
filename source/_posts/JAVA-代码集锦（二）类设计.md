@@ -1,5 +1,5 @@
 ---
-title: JAVA 代码集锦（二）类设计
+title: Java 代码集锦（二）类设计
 date: 2023-11-19 14:29:22
 updated:
 tags:

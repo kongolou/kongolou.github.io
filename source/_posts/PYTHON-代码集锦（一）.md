@@ -1,5 +1,5 @@
 ---
-title: PYTHON 代码集锦（一）
+title: Python 代码集锦（一）
 date: 2023-11-20 10:35:30
 updated:
 tags:

@@ -34,7 +34,7 @@ abcjs:
 Jellyfin 官方给出的 [Jellyfin Server Docker](https://jellyfin.org/downloads/docker/) 安装建议如下:
 > # Docker
 > Run Jellyfin in Docker. Example commands store data in `/srv/jellyfin` and assume your media is stored under `/media`.
-> ```
+> ```bash
 > docker pull jellyfin/jellyfin:latest  # or docker pull ghcr.io/jellyfin/jellyfin:latest
 > mkdir -p /srv/jellyfin/{config,cache}
 > docker run -d -v /srv/jellyfin/config:/config -v /srv/jellyfin/cache:/cache -v /media:/media --net=host jellyfin/jellyfin:latest
@@ -42,7 +42,7 @@ Jellyfin 官方给出的 [Jellyfin Server Docker](https://jellyfin.org/downloads
 
 容器部署主要在第三步。个人不太建议直接使用 `--net=host`，因此，本人对第三步作了一些个性化改进：
 
-```
+```bash
 docker run -d --name jellyfin -p 8096:8096 -v C:\Users\Administrator\Videos\Jellyfin\config:/config -v C:\Users\Administrator\Videos\Jellyfin\cache:/cache -v C:\Users\Administrator\Videos\Jellyfin\media:/media jellyfin/jellyfin:latest
 9a8ce791abe61cc212198f17630aa68ed21a6604bc17f2eabe6f3f7c96719ece
 ```

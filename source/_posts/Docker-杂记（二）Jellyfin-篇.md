@@ -44,7 +44,6 @@ Jellyfin 官方给出的 [Jellyfin Server Docker](https://jellyfin.org/downloads
 
 ```bash
 docker run -d --name jellyfin -p 8096:8096 -v C:\Users\Administrator\Videos\Jellyfin\config:/config -v C:\Users\Administrator\Videos\Jellyfin\cache:/cache -v C:\Users\Administrator\Videos\Jellyfin\media:/media jellyfin/jellyfin:latest
-9a8ce791abe61cc212198f17630aa68ed21a6604bc17f2eabe6f3f7c96719ece
 ```
 
 Jellyfin 默认的 HTTP 端口 8096，而 HTTPS 端口是 8920，但 HTTPS 默认不启用，因此，只需要映射 8096 端口即可。

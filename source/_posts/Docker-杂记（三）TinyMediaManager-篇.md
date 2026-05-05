@@ -106,8 +106,8 @@ services:
 - 关闭“预告片”和“字幕”刮削
 - 重命名规则
   - 电影
-    - 电影文件夹名：${title} (${year})
-    - 电影文件名：${title}
+    - 电影文件夹名：${englishTitle} (${year}) [tmdbid-${showTmdb}]
+    - 电影文件名：${englishTitle}
     - 使用 ASCII 字符代替非 ASCII 字符
   - 剧集
     - 剧集文件夹名：${showEnglishTitle} (${showYear}) [tmdbid-${showTmdb}]
@@ -117,3 +117,4 @@ services:
 - 后期处理
   - 电影
     - FFmpeg：/data/addons/ffmpeg -y -i poster.webp -q:v 2 poster.jpg
+    - Rename: /usr/bin/rename.ul .webp .jpg *.webp

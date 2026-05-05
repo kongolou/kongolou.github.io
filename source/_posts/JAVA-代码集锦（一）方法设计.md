@@ -32,7 +32,8 @@ highlight_shrink:
 aside:
 abcjs:
 ---
-# 九九乘法表
+## 九九乘法表
+
 ```java
 /**
  * MultiplicationTable.java
@@ -60,7 +61,8 @@ public class MultiplicationTable{
 }
 ```
 
-# 杨辉三角
+## 杨辉三角
+
 ```java
 /**
  * YangHuiTriangle.java
@@ -141,7 +143,8 @@ public class YangHuiTriangle {
 }
 ```
 
-# 空心金字塔
+## 空心金字塔
+
 ```java
 /**
  * HollowPyramid.java
@@ -184,7 +187,8 @@ public class HollowPyramid{
 }
 ```
 
-# 空心菱形
+## 空心菱形
+
 ```java
 /**
  * HollowDiamond.java
@@ -243,8 +247,10 @@ public class HollowDiamond{
 }
 ```
 
-# 猜数游戏
-## 玩家
+## 猜数游戏
+
+### 玩家
+
 ```java
 /**
  * GuessGameDemo/Player.java
@@ -260,7 +266,8 @@ public class Player{
 }
 ```
 
-## 玩法
+### 玩法
+
 ```java
 /**
  * GuessGameDemo/GuessGame.java
@@ -324,7 +331,8 @@ public class GuessGame{
 }
 ```
 
-## 启动器
+### 启动器
+
 ```java
 /**
  * GuessGameDemo/GameLauncher.java
@@ -338,7 +346,8 @@ public class GameLauncher{
 }
 ```
 
-## 测试
+### 测试
+
 ```plaintext
 I'm thinking a number between 0 and 9...
 Number to guess is 3
@@ -387,6 +396,7 @@ Player three got it right? true
 Game is over.
 ```
 
-# 参考教程
+## 参考教程
+
 - [【零基础 快速学Java】韩顺平 零基础30天学会Java](https://www.bilibili.com/video/BV1fh411y7R8/?spm_id_from=333.999.0.0&vd_source=21330d56e1fc273feed05474d179b07c)
 - 《Head First Java》

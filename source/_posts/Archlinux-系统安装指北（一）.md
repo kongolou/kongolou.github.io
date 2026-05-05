@@ -29,17 +29,17 @@ highlight_shrink:
 aside:
 abcjs:
 ---
-# 写在前面
+## 写在前面
 
 本文写作于 2023 年 5 月 14 日，仅为[官方教程](https://wiki.archlinuxcn.org/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97)的拙劣注解与擅自补充。
 
-# 第一步：安装前的准备
+## 第一步：安装前的准备
 
 1. 安装介质装有安全[镜像](https://mirrors.ustc.edu.cn/archlinux/iso/2023.05.03/)
 2. 周围有方便连接的稳定网络
 3. 电脑禁用安全启动，调整启动顺序从安装介质启动到 Live 环境中
 
-# 第二步：在 Live 中初步配置系统
+## 第二步：在 Live 中初步配置系统
 
 ```bash
 # 1.6 验证引导模式：有显示表示是 UEFI 引导，以下以 UEFI 引导为例
@@ -74,7 +74,7 @@ $ genfstab -U /mnt >> /mnt/etc/fstab
 $ cat /mnt/etc/fstab
 ```
 
-# 第三步：进入新系统进一步配置
+## 第三步：进入新系统进一步配置
 
 ```bash
 # 3.2 chroot 到新系统
@@ -109,11 +109,11 @@ $ umount -R /mnt
 $ reboot
 ```
 
-# 欢迎来到 Archlinux 🎉🎉🎉
+## 欢迎来到 Archlinux 🎉🎉🎉
 
 上述流程已经完成了 Arch 的基本部署，以下内容作为补充，仅作参考，请根据自己的喜好进行适当的选择。
 
-## 创建日常用户
+### 创建日常用户
 
 ```bash
 # 以 root 登录，在 wheel 小组创建一个名为 archie 的用户
@@ -129,7 +129,7 @@ $ reboot
 # 以后均以 archie 登录
 ```
 
-## 配置桌面环境（KDE）
+### 配置桌面环境（KDE）
 
 ```bash
 # 注意 plasma 包组中包含了 sddm
@@ -145,7 +145,7 @@ Current=breeze
 $ reboot
 ```
 
-## 安装中文字体
+### 安装中文字体
 
 ```bash
 $ sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-sarasa-gothic
@@ -159,7 +159,7 @@ $ sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-sarasa-gothic
 # 7. 重启
 ```
 
-## 配置中文输入法（Fcitx5）
+### 配置中文输入法（Fcitx5）
 
 ```bash
 $ sudo pacman -S fcitx5-im fcitx5-chinese-addons fcitx5-pinyin-zhwiki
@@ -179,8 +179,10 @@ $ reboot
 # 6. 点击 Add 并 Apply
 ```
 
-# 挑战：一小时安装 Arch
+## 挑战：一小时安装 Arch
+
 现在你已经读完了，来完成一项挑战吧。  
+
 ```bash
 $ ls /sys/firmware/efi/efivars
 $ ip link
@@ -248,7 +250,7 @@ $ reboot
 ```
 注：在 Live 环境中，你可以通过 Alt + 左/右箭头切换控制台。开一个控制台以 root 登录，在联网条件下通过 lynx 参考 archlinux.org 的文档来作弊。
 
-# 参考链接
+## 参考链接
 
 - [安装指南 - Arch Linux 中文维基](https://wiki.archlinuxcn.org/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97)
 - [iwd - Arch Linux 中文维基](https://wiki.archlinuxcn.org/wiki/Iwd#iwctl)

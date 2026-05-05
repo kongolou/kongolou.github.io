@@ -168,7 +168,9 @@ int main() {
 ```
 
 ### 小型数据库
+
 有点小 Bug，使用时请先在源代码所在目录下创建 Info.dat 文件。
+
 ```cpp
 #include <iostream>
 #include <fstream>

@@ -29,14 +29,14 @@ highlight_shrink:
 aside:
 abcjs:
 ---
-# 汉诺塔
+## 汉诺塔
+
 ```python
 # 汉诺塔模型
 total_levels: int  # 总层数
 column_from: list  # 起点
 column_to: list  # 终点
 column_via: list  # 中转
-
 
 # 数学归纳法
 # n = 1:
@@ -55,7 +55,6 @@ def move_hanoi(column_a, column_b, column_c, move_levels):
     move_hanoi(column_a, column_b, column_c, 1)
     move_hanoi(column_c, column_b, column_a, move_levels - 1)
 
-
 # 打印汉诺塔
 def print_hanoi():
     global column_from, column_to, column_via
@@ -63,7 +62,6 @@ def print_hanoi():
     print("column_to  : ", column_to)
     print("column_via : ", column_via)
     print()
-
 
 # 初始化模型
 total_levels = eval(input("请输入汉诺塔层数："))
@@ -76,7 +74,8 @@ move_hanoi(column_from, column_to, column_via, total_levels)
 print("完成")
 ```
 
-# 用时间创建 ID 号码
+## 用时间创建 ID 号码
+
 ```python
 import datetime
 
@@ -85,7 +84,8 @@ id = datetime.datetime.now().strftime(r"%Y%m%d%H%M%S")
 print(id)
 ```
 
-# CSV 格式文件转换为 DB 格式文件
+## CSV 格式文件转换为 DB 格式文件
+
 ```python
 import pandas as pd
 import sqlite3
@@ -107,14 +107,16 @@ df.to_sql(name="test", con=con, if_exists='replace', index=False)
 con.close()
 ```
 
-# HTML 格式文件转换为 PDF 格式文件
+## HTML 格式文件转换为 PDF 格式文件
+
 ```python
 from weasyprint import HTML
 
 HTML("test.html").write_pdf("test.pdf")
 ```
 
-# 画菱形
+## 画菱形
+
 ```python
 from PIL import Image, ImageDraw
 

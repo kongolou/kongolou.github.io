@@ -37,14 +37,16 @@ abcjs:
 
 于是我先在自己 Windows 11 PC 上尝试了一下，也算是有了一次配 Docker 环境的经验。
 
-# Docker Desktop 安装
+## Docker Desktop 安装
+
 选择官方提供的安装包链接进行下载和安装即可：[Windows | Docker Docs](https://docs.docker.com/desktop/setup/install/windows-install/)。
 
+## 更换 Docker Hub 源
 
-# 更换 Docker Hub 源
 打开 Docker Desktop，选择免登录继续。
 
 然后，在软件右上角设置里，编辑 Docker Engine 的 json 内容如下：
+
 ```json
 {
   "builder": {
@@ -66,16 +68,20 @@ abcjs:
 
 在软件右下角打开终端，输入 `docker info` 命令能够查看到刚刚添加的源。
 
-# 下载 Node.js 镜像
+## 下载 Node.js 镜像
+
 遵循官方指南 [Node.js — 下载 Node.js®](https://nodejs.org/zh-cn/download) 通过 `docker pull` 指令下载。
 
 我一直用的是 `20` 的 `LTS`，所以我的指令是：
+
 ```bash
 docker pull node:20-alpine
 ```
 
-# 运行容器
+## 运行容器
+
 这里先给出 `docker run` 的命令：
+
 ```bash
 docker run -it -d --name node -p 4000:4000 -v C:\Users\Administrator\Documents\Repos\kongolou.gitlab.io-main:/root/blog node:20-alpine
 ```
@@ -88,8 +94,10 @@ docker run -it -d --name node -p 4000:4000 -v C:\Users\Administrator\Documents\R
 
 可以看出来，我已经把 GitLab 上的博客拉到了本地的 `C:\Users\Administrator\Documents\Repos\kongolou.gitlab.io-main` 目录。而映射 `4000` 端口是为了方便 `hexo server` 进行预览。
 
-# 配置 Hexo 环境
+## 配置 Hexo 环境
+
 在 Docker Desktop 的容量列表中选择刚刚新建的 `node` 容器，打开 `Exec` 伪终端，安装官方教程 [Hexo](https://hexo.io/zh-cn/index.html) 配置 Hexo。
+
 ```bash
 cd /root/blog
 npm install -g hexo-cli
@@ -97,6 +105,7 @@ npm install
 ```
 
 接下来就又可以愉快地写作了~
+
 ```bash
 hexo n "Docker 杂记（一）Node 篇"
 hexo g && hexo s
@@ -104,7 +113,8 @@ hexo cl
 hexo d
 ```
 
-# 关于容器的停止与删除
+## 关于容器的停止与删除
+
 注意删除容器后，Hexo 环境也随之删除。
 
 不使用 Node 时，停止 `node` 容器即可。

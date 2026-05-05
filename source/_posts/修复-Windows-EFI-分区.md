@@ -29,9 +29,11 @@ aside:
 abcjs:
 ---
 故事是我在安装 Windows + Ubuntu 双系统的时候，后知后觉安装的 Ubuntu 的版本太新了，一怒之下在终端中执行了传说中的指令
+
 ```bash
 sudo rm -rf /*
 ```
+
 我承认这是一个愚蠢的决定，因为这个操作意外删除了 Windows 的 EFI 分区，直接导致我的 Windows 无法被正确引导启动，然后我便开始了漫长的查文档之旅，只是为了修复这个该死的 EFI 分区……
 
 {% note warning %}

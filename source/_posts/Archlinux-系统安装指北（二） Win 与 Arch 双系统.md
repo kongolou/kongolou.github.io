@@ -34,7 +34,8 @@ abcjs:
 - 引导问题（注意：本文只讨论 UEFI 引导）
 - 时间问题
 
-# 双系统引导（GRUB）
+## 双系统引导（GRUB）
+
 根据 ArchWiki 上给出的说明， Windows 和 Archlinux 双系统引导的推荐方案为：
 
 > 先安装 Windows，再安装 Archlinux
@@ -43,7 +44,8 @@ abcjs:
 
 > Linux 在前的方案中，只有单个 Windows 分区而没有 WinRE 也没有 MSR 分区的 Windows 是否能正常工作并不明确。
 
-## 先安装 Windows
+### 先安装 Windows
+
 Windows 给用户分配的 ESP 分区大小默认为 100MB ，这对多系统引导而言显然不够用。
 因此安装双系统一个很重要的任务是扩展 Windows 的 ESP 分区。
 
@@ -59,14 +61,17 @@ Windows 给用户分配的 ESP 分区大小默认为 100MB ，这对多系统引
 6. 将原 D 盘的备份文件转移到新 C 盘，删除原 D 盘，为 Archlinux 系统安装腾出空间；
 
 完成后，磁盘布局如下：
+
 | ESP        | MSR  | C:     | WinRE | 未分配 |
 |------------|------|--------|-------|--------|
 | 600-1100MB | 16MB | 约300G | 约1G  | 200G   |
 
-## 再安装 Archlinux
+### 再安装 Archlinux
+
 与单系统相比，双系统下 Archlinux 的安装过程有所不同，主要体现在挂载分区上。
 安装前的准备工作请参考前文：Archlinux 系统安装指北（一）
 下面直接给出 Archlinux 系统安装过程中需要输入的命令：
+
 ```bash
 # 磁盘分区与格式化（lsblk 查看，未分配磁盘应为 /dev/nvme0n1p5）
 ## 假设分 8G 的 SWAP（新的 /dev/nvme0n1p5）和 192G 的根目录（新的 /dev/nvme0n1p6）
@@ -111,11 +116,13 @@ $ reboot
 ```
 
 现在，在 GRUB 引导界面应该能看到两个系统对应的选项了。双系统引导至此完成，完整的磁盘布局如下：
+
 | ESP        | MSR  | C:     | WinRE | SWAP   | /    |
 |------------|------|--------|-------|--------|------|
 | 600-1100MB | 16MB | 约300G | 约1G  | 8G     | 192G |
 
-# 系统时间修复
+## 系统时间修复
+
 在刚才的安装步骤中，我们没有对系统时间进行处理。现在，我们来分析一下系统时间问题。
 
 因为先安装了 Windows，所以硬件时间被 Windows 设置为了当地时间。而 Windows 和 Archlinux 默认的显示时间都是硬件时间，所以理论上无需多余配置，两个系统的时间就应该是同步的。
@@ -124,16 +131,19 @@ $ reboot
 
 因此，Archwiki 给出的建议是，先将硬件时间设置为 UTC，再将各个系统的显示时间同步为本地时区时间，这样无论安装多少个系统，时间配置都是统一的。
 
-## 修复 Windows 系统时间
+### 修复 Windows 系统时间
+
 > 修复时间问题的关键步骤是在 Windows 中将硬件时间设置为 UTC。
 
 这需要通过修改注册表来完成，以管理员身份运行终端，执行如下命令
+
 ```bash
 reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /d 1 /t REG_DWORD /f
 ```
 进一步在设置中，同步显示时间为本地时间。
 
-## 修复 Archlinux 系统时间
+### 修复 Archlinux 系统时间
+
 未修复前，Archlinux 的硬件时间和显示时间都是本地时间，而时区为格林尼治。
 因此修复 Archlinux 系统时间分为三步
 1. 设置时区为本地时区
@@ -153,10 +163,12 @@ $ sudo timedatectl set-local-rtc 0
 $ sudo hwclock --systohc
 ```
 
-# Archlinux 系统安装遗留问题（Archinstall-problem which remains）
+## Archlinux 系统安装遗留问题（Archinstall-problem which remains）
+
 没错这个问题就是联网问题。
 
-## iwctl 无线联网步骤
+### iwctl 无线联网步骤
+
 ```bash
 # 进入 iwd 环境
 $ iwctl
@@ -174,7 +186,8 @@ $ station wlan0 show
 $ quit
 ```
 
-## nmcli 无线联网步骤
+### nmcli 无线联网步骤
+
 ```bash
 # 前提是你已经联网安装了 NetworkManager（比如系统预安装的时候）
 # 开启 Networkmanager 服务

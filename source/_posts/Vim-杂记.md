@@ -46,5 +46,6 @@ set guifont=Consolas:h12:cANSI:qDRAFT
 colorscheme desert
 ```
 
-# 参考链接
+## 参考链接
+
 - [linux - vim技巧：详解tabstop、softtabstop、expandtab三个选项的区别 - 南木阁 - SegmentFault 思否](https://segmentfault.com/a/1190000021133524)

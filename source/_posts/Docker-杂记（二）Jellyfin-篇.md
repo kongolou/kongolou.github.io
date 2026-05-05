@@ -32,6 +32,7 @@ aside:
 abcjs:
 ---
 Jellyfin 官方给出的 [Jellyfin Server Docker](https://jellyfin.org/downloads/docker/) 安装建议如下:
+
 > # Docker
 > Run Jellyfin in Docker. Example commands store data in `/srv/jellyfin` and assume your media is stored under `/media`.
 > ```bash
@@ -58,6 +59,7 @@ C:\Users\Administrator\Videos\Jellyfin\
 ```
 
 对应 Jellyfin 监控的目录结构为：
+
 ```
 /
 /cache

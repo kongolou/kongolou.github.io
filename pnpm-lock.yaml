@@ -35,6 +35,9 @@ importers:
       hexo-renderer-marked:
         specifier: ^7.0.1
         version: 7.0.1
+      hexo-renderer-pug:
+        specifier: ^3.0.0
+        version: 3.0.0
       hexo-renderer-stylus:
         specifier: ^3.0.1
         version: 3.0.1
@@ -53,6 +56,9 @@ importers:
       hexo-wordcount:
         specifier: ^6.0.1
         version: 6.0.1
+      moment-timezone:
+        specifier: ^0.6.2
+        version: 0.6.2
 
 packages:
 

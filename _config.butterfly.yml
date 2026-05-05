@@ -48,7 +48,7 @@ social:
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
   # fas fa-feather: https://www.zhihu.com/people/bei-yi-zuo-gu || Zhihu
   # fab fa-bilibili: https://space.bilibili.com/453346061 || Bilibili
-  # fab fa-github: https://github.com/kongolou || Github
+  fab fa-github: https://github.com/kongolou || Github
   fas fa-envelope: mailto:kongolou@163.com || Email
 
 # Image (圖片設置)
@@ -59,7 +59,7 @@ favicon: /images/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: /images/avatar.png  # https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: /images/avatar.png # https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
   effect: false
 
 # Disable all banner image
@@ -69,7 +69,7 @@ disable_top_img: false
 index_img:
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: transparent  # /images/default_top_img.png
+default_top_img: https://www.loliapi.com/acg/ # /images/default_top_img.png
 
 # The banner image of archive page
 archive_img:
@@ -113,7 +113,7 @@ error_img:
 # A simple 404 page
 error_404:
   enable: true
-  subtitle: 'Page Not Found'
+  subtitle: "Page Not Found"
   background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
 post_meta:
@@ -315,9 +315,9 @@ translate:
   # Time delay
   translateDelay: 0
   # The text of the button when the language is Simplified Chinese
-  msgToTraditionalChinese: '繁'
+  msgToTraditionalChinese: "繁"
   # The text of the button when the language is Traditional Chinese
-  msgToSimplifiedChinese: '簡'
+  msgToSimplifiedChinese: "簡"
 
 # Read Mode (閲讀模式)
 readmode: true
@@ -656,7 +656,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background: url(https://www.loliapi.com/acg/)
+background:
 
 # Footer Background
 footer_bg: true
@@ -695,14 +695,14 @@ canvas_ribbon:
 
 # Fluttering Ribbon (動態彩帶)
 canvas_fluttering_ribbon:
-  enable: false
+  enable: true
   mobile: false
 
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
   enable: false
-  color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
+  color: "0,0,255" #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
@@ -739,7 +739,7 @@ beautify:
   enable: true
   field: post # site | post
   title-prefix-icon: '\f0c1'
-  title-prefix-icon-color: '#F47466'
+  title-prefix-icon-color: "#F47466"
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
@@ -747,7 +747,7 @@ font:
   global-font-size:
   code-font-size:
   font-family:
-  code-font-family:
+  code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
@@ -865,8 +865,8 @@ aplayerInject:
 snackbar:
   enable: false
   position: bottom-left
-  bg_light: '#49b1f5' # The background color of Toast Notification in light mode
-  bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
+  bg_light: "#49b1f5" # The background color of Toast Notification in light mode
+  bg_dark: "#1f1f1f" # The background color of Toast Notification in dark mode
 
 # https://instant.page/
 # prefetch (預加載)

@@ -28,6 +28,6 @@
     "hexo-theme-butterfly": "^5.5.5",
     "hexo-theme-landscape": "^1.1.0",
     "hexo-wordcount": "^6.0.1",
-    "moment-timezone": "^0.6.2"
+    "moment-timezone": "^0.6.3"
   }
 }
